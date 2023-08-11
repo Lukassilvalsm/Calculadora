@@ -1,0 +1,111 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    
+}
+
+:root{
+    --BC: #212529;
+    --bordercolor: rebeccapurple;
+    --Fontcolor: aliceblue;
+    --Buttoncolor: blueviolet;
+
+}
+body{
+    background-color: var(--BC);
+    color: var(--Fontcolor);
+}
+main{
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 1.5rem 2.5rem;
+    position: relative;
+}
+header{
+    padding: 2rem 0;
+}
+#temaSwitch{
+    background-color: var(--BC);
+    color: var(--Fontcolor);
+    border: .225rem solid var(--Fontcolor);
+}
+#temaSwitch:hover{
+    background-color: var(--Fontcolor);
+    color: var(--BC);
+}
+button{ /* aqui ver o tamanho dos buttons */
+    background-color: var(--bordercolor);
+    border: none;
+    border-radius: .35rem;
+    font-weight: 700;
+    color: var(--Fontcolor);
+    padding: .10rem 2rem;
+    transition: .15s;
+}
+input{
+    background-color: var(--BC);
+    border: 2px solid var(--bordercolor);
+    border-radius: .5rem;
+    color: var(--Fontcolor);
+    display: block;
+    font-size: 1.9rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: end;
+    width: 100%;
+}
+#keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+#keys button{
+    color: var(--Fontcolor);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+#keys button:hover {
+    filter: brightness(0.8);
+}
+
+#resultado{
+    border-width: 2px 2px 2px 0;
+    border-radius: 0 .5rem .5rem 0;
+
+}
+
+#copyToClipboard{
+    background-color: transparent;
+    border:  solid var(--bordercolor);
+    border-width: 2px;
+    border-radius: .5rem 0 0 .5rem;
+    color: var(--Fontcolor);
+    cursor: pointer;
+    display: block;
+    height: 4.36rem;
+    width: 6.5rem;
+}
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.error {
+    background-color: var(--error-color);
+}
+  
+.success {
+    border-color: var(--Buttoncolor) !important;
+    color: var(--Buttoncolor) !important;
+  }
